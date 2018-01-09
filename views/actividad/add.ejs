@@ -1,0 +1,42 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="/activida/list">Actividades</a>
+    </li>
+    <li class="breadcrumb-item active">Nueva Actividad</li>
+</ol>
+<h1>Nueva Actividad</h1>
+<form method="post" action="/actividad/create">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea name="descripcion" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="objetivos">Objetivos</label>
+        <textarea name="objetivos" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="resultados">Resultados Esperados</label>
+        <textarea name="resultados" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" value="(new Date()).toString('yyyy-MM-ddThh:mm')" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="duracion">Duracion en Horas</label>
+        <input type="number" name="duracion" value="1.00" step="0.01" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="lugar">Lugar</label>
+        <input type="text" name="lugar" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="observaciones">Observaciones</label>
+        <textarea name="observaciones" class="form-control"></textarea>
+    </div>
+    <input type="submit" value="Guardar" class="btn btn-primary">
+</form>
